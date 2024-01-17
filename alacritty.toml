@@ -1,0 +1,27 @@
+# https://alacritty.org/config-alacritty.html
+
+import = [
+    "~/.config/alacritty/themes/themes/darcula.toml"
+]
+
+live_config_reload = true
+
+[window] 
+padding = { x = 3, y = 3 }
+dynamic_padding = true
+
+[font]
+normal = { family = "hack Nerd Font", style = "Regular" }
+size = 16
+
+[cursor]
+
+[keyboard]
+bindings = [
+{ key = "N", mods = "Command", action = "CreateNewWindow" },
+{ key = "+", mods = "Command", action = "IncreaseFontSize" },
+{ key = "-", mods = "Command", action = "DecreaseFontSize" },
+{ key = "k", mods = "Command", action = "SelectNextTab" },
+{ key = "j", mods = "Command", action = "SelectPreviousTab" },
+]
+
